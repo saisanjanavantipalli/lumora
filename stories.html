@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumora | Stories</title>
+    <link rel="stylesheet" href="css/images.css">
+    <style>
+        /* Specialized styles for the text overlay layout */
+        .stories-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto 100px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .story-card {
+            position: relative; /* Essential to anchor the text at the bottom */
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; /* Removes underline from links */
+            display: block;
+        }
+
+        .story-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .story-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Dark overlay gradient to make white text highly readable */
+        .story-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .story-overlay h3 {
+            font-family: "Georgia", serif;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+
+        .story-overlay p {
+            font-size: 13px;
+            color: #ccc;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        .story-overlay .date {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaa;
+        }
+
+        /* Persistent Back Button at bottom-left */
+        .back-btn-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            padding-left: 10px;
+        }
+
+        .back-link {
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: gold;
+        }
+    </style>
+</head>
+<body style="background: #FAF6F0;">
+
+<div style="padding: 40px 0; text-align: center;">
+    <h2 style="font-size: 42px; font-family: Georgia, serif; letter-spacing: 2px; color: #111;">STORIES</h2>
+    <p>Step inside the frame</p>
+</div>
+
+<section class="stories-container">
+
+    <a href="story-waves.html" class="story-card">
+        <img src="C:\Users\sanja\Desktop\MINE\images\stories4.jpg" alt="Archipelago">
+        <div class="story-overlay">
+            <h3>Waves of Time</h3>
+            <p>A quiet walk along the shores of memory</p>
+            
+        </div>
+    </a>
+
+    
+
+</section>
+
+<footer>
+    <p>© 2026 Lumora . All Rights Reserved.</p>
+</footer>
+
+</body>
+      <a href="index.html" class="home-link1">Home</a>
+</html>
